@@ -13,9 +13,19 @@ export default function Header(){
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span></span>
                 </div>
+                <nav className={`menu ${setMenuAtivo ? 'active' : ''}`}>
+                        <a href="#hero" onClick={toggleMenu}>Home</a>
+                        <a href="#cardapio" onClick={toggleMenu}>Cardápio</a>
+                        <a href="#sobre" onClick={toggleMenu}>Sobre</a>
+                        <a href="#contato" onClick={toggleMenu}>Contato</a>
+
+                </nav>
             </header>
+            <div className={`overlay-menu ${menuAtivo ? 'active' : ''}`}
+            onClick={toggleMenu}>
+
+            </div>
         </>
     )
 }
