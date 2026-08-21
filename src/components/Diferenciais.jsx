@@ -27,7 +27,7 @@ const listaDiferenciais = [
         imagem: relampagoImg,
         alt: "Relâmpago",
         texto: "Delivery Rápido"
-    }
+    } 
 ];
 
 export default function Diferenciais(){
